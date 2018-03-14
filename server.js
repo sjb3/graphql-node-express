@@ -10,7 +10,7 @@ const port = process.env.PORT || 4000
 
 app.use('/graphql', expressGraphQL({
   schema:schema,
-  graphql:true
+  graphiql:true
 }));
 
 app.listen(port, (req, res) => {
